@@ -1,4 +1,4 @@
-import { Controller,Get } from "@nestjs/common";
+import { Controller,Delete,Get, Post, Put } from "@nestjs/common";
 
 @Controller('report/:type')
 export class AppController {
@@ -13,4 +13,17 @@ export class AppController {
   getIncomeReportbyId() { 
     return {};
   }
+  @Delete(":id  ")
+  deleteIncomebyId() {
+    return {};
+  }
+  @Post()
+  createIncomeReport() {
+    return {};
+  }
+  @Put(':id')
+  updateIncomeReport() {
+    return {};
+  }
+
 }
