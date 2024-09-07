@@ -13,9 +13,9 @@ export class AppController {
   getIncomeReportbyId() { 
     return {};
   }
-  @Delete(":id  ")
+  @Delete(":id")
   deleteIncomebyId() {
-    return {};
+    return "delete";
   }
   @Post()
   createIncomeReport() {
